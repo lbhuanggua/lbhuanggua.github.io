@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>风吹屁屁凉丶</title>
+  <title>风吹屁屁凉</title>
   <subtitle>Java技术栈、分布式系统架构设计、高并发系统设计、微服务技术栈。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
@@ -9,7 +9,7 @@
   <id>https://lbhuanggua.github.io/</id>
   
   <author>
-    <name>风吹屁屁凉丶</name>
+    <name>风吹屁屁凉</name>
     
   </author>
   
