@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lbhuanggua.github.io/"/>
-  <updated>2017-05-20T09:08:51.807Z</updated>
+  <updated>2017-05-21T09:34:29.031Z</updated>
   <id>https://lbhuanggua.github.io/</id>
   
   <author>
@@ -16,26 +16,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>goaccess</title>
+    <title>GoAccess应用与实践</title>
     <link href="https://lbhuanggua.github.io/2017/05/20/goaccess/"/>
     <id>https://lbhuanggua.github.io/2017/05/20/goaccess/</id>
     <published>2017-05-20T09:08:15.000Z</published>
-    <updated>2017-05-20T09:08:51.807Z</updated>
+    <updated>2017-05-21T09:34:29.031Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h3 id="GoAccess-是什么？"><a href="#GoAccess-是什么？" class="headerlink" title="GoAccess 是什么？"></a>GoAccess 是什么？</h3><p><a href="https://goaccess.io/" target="_blank" rel="external">GoAccess</a>是一个开源的实时Web日志分析器和交互式查看器，可在* nix系统或浏览器的终端中运行。 它为需要可视化服务器报告的系统管理员提供快速有价值的HTTP统计信息。</p>
+<h3 id="为什么使用GoAccess"><a href="#为什么使用GoAccess" class="headerlink" title="为什么使用GoAccess"></a>为什么使用GoAccess</h3><p>GoAccess被设计为快速的基于终端的日志分析器。其核心思想是实时快速分析和查看Web服务器统计信息，而无需使用浏览器（如果您想通过SSH快速分析访问日志，或者如果您只喜欢在终端中工作）。 虽然终端输出是默认输出，但它具有生成完整的实时HTML报告（非常适合分析，监控和数据可视化）以及JSON和CSV报告的功能。</p>
+<h3 id="GoAccess-特征"><a href="#GoAccess-特征" class="headerlink" title="GoAccess 特征"></a>GoAccess 特征</h3><p>1、完全实时<br>  所有面板和指标都定时在终端输出上每200毫秒更新一次，并在HTML输出上每秒更新一次。<br>2、几乎所有的Web日志格式<br>  GoAccess允许任何自定义日志格式字符串。预定义的选项包括Apache，Nginx，Amazon S3，弹性负载平衡，CloudFront等<br>3、跟踪应用程序响应时间<br>  跟踪服务请求所需的时间。非常有用，如果你想跟踪减慢你的网站的网页。<br>4、增量日志处理<br>  需要数据持久吗？ GoAccess能够通过磁盘B + Tree数据库逐步处理日志。<br>5、只有一个依赖<br>  GoAccess是用C编写的。要运行它，你只需要ncurses作为依赖。而已。它甚至具有自己的符合RFC6455的Web Socket服务器。<br>6、需要最小配置<br>  您可以根据访问日志文件运行它，选择日志格式，并让GoAccess解析访问日志并显示统计信息。<br>7、按小时或日期确定最慢运行请求的点击次数，访问者数，带宽数和指标数。<br>8、每个虚拟主机的指标<br>  有多个虚拟主机（服务器块）？显示哪个虚拟主机正在消耗大部分Web服务器资源的面板。<br>9、颜色方案可定制<br>  裁缝GoAccess适合您自己的颜色味道/方案。通过终端，或通过简单地更新HTML输出上的样式表。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="centOS下安装，其他系统安装请前往官网查看，都差不多"><a href="#centOS下安装，其他系统安装请前往官网查看，都差不多" class="headerlink" title="centOS下安装，其他系统安装请前往官网查看，都差不多"></a>centOS下安装，其他系统安装请前往<a href="https://goaccess.io/download" target="_blank" rel="external">官网</a>查看，都差不多</h3><p>1、安装依赖包GeoIP<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ wget http://geolite.maxmind.com/download/geoip/api/c/GeoIP.tar.gz</div><div class="line">$ tar -xzvf GeoIP.tar.gz</div><div class="line">$ <span class="built_in">cd</span> GeoIP-1.4.8/</div><div class="line">$ ./configure</div><div class="line">$ make</div><div class="line">$ make install</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>坑：有可能遇到“goaccess: error while loading shared libraries: libGeoIP.so.1” 或其他类似错误，请尝试建立软连接<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ln <span class="_">-s</span> /usr/<span class="built_in">local</span>/lib/libGeoIP.so* /lib64/</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>2、安装<a href="https://goaccess.io/download" target="_blank" rel="external">GoAccess</a>很简单。只需下载，提取并编译它。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ wget http://tar.goaccess.io/goaccess-1.2.tar.gz</div><div class="line">$ tar -xzvf goaccess-1.2.tar.gz</div><div class="line">$ <span class="built_in">cd</span> goaccess-1.2/</div><div class="line">$ ./configure --enable-utf8 --enable-geoip=legacy</div><div class="line">$ make</div><div class="line">$ make install</div></pre></td></tr></table></figure></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>命令行格式：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">goaccess [filename] [ options ... ] [-c][-M][-H][-q][<span class="_">-d</span>][...]</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>以下命令执行以Nginx默认格式日志执行。</p>
+</blockquote>
+<h3 id="控制台输出日志报告"><a href="#控制台输出日志报告" class="headerlink" title="控制台输出日志报告"></a>控制台输出日志报告</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">goaccess /usr/<span class="built_in">local</span>/nginx/logs/access.log</div></pre></td></tr></table></figure>
+<p>输出如下界面：<br><img src="/img/goaccess_configuration.png" alt="image"><br>选择 Common Log Format（CLF），空格键选中，回车<br>输出：</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;h3 id=&quot;GoAccess-是什么？&quot;&gt;&lt;a href=&quot;#GoAccess-是什么？&quot; class=&quot;headerlink&quot; title=
     
     </summary>
     
