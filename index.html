@@ -356,8 +356,18 @@
 <blockquote>
 <p>以下命令执行以Nginx默认格式日志执行。</p>
 </blockquote>
-<h3 id="控制台输出日志报告"><a href="#控制台输出日志报告" class="headerlink" title="控制台输出日志报告"></a>控制台输出日志报告</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">goaccess /usr/<span class="built_in">local</span>/nginx/logs/access.log</div></pre></td></tr></table></figure>
-<p>输出如下界面：<br><img src="/img/goaccess_configuration.png" alt="image"><br>选择 Common Log Format（CLF），空格键选中，回车<br>输出：</p>
+<h3 id="控制台输出报告"><a href="#控制台输出报告" class="headerlink" title="控制台输出报告"></a>控制台输出报告</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">goaccess /usr/<span class="built_in">local</span>/nginx/logs/access.log</div></pre></td></tr></table></figure>
+<p>输出如下界面：<br><img src="/img/goaccess_configuration.png" alt="image"><br>选择 Common Log Format（CLF），空格键选中，回车<br>输出：<img src="/img/goaccess_report.png" alt="image"></p>
+<p>###生成HTML报告<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">goaccess --log-format=COMBINED /usr/<span class="built_in">local</span>/nginx/logs/access.log -o /path/nginx-log-report.html</div></pre></td></tr></table></figure></p>
+<p>输出：<img src="/img/goaccess_report_html.png" alt="image"></p>
+<p>###生成JSON报告<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">goaccess --log-format=COMBINED /usr/<span class="built_in">local</span>/nginx/logs/access.log -o /path/nginx-log-report.json</div></pre></td></tr></table></figure></p>
+<p>###生成CSV报告<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">goaccess --log-format=COMBINED /usr/<span class="built_in">local</span>/nginx/logs/access.log --no-csv-summary -o /path/nginx-log-report.csv</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>–no-csv-summary 禁用CSV输出上的摘要指标。</p>
+</blockquote>
+<p>###控制台实时监视<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tail <span class="_">-f</span> /usr/<span class="built_in">local</span>/nginx/logs/access.log | goaccess --log-format=COMBINED -</div></pre></td></tr></table></figure></p>
+<p>###实时HTML输出</p>
+<h2 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h2><h2 id="报告说明"><a href="#报告说明" class="headerlink" title="报告说明"></a>报告说明</h2><p>tail -f /usr/local/nginx/logs/lch.netpat.cn.access.log | goaccess –log-format=COMBINED -o /home/upload/nginx-log-report.html –real-time-html -</p>
 
           
         
@@ -570,7 +580,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
