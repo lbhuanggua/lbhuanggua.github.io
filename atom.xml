@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>风吹屁屁凉</title>
-  <subtitle>Java技术栈、分布式系统架构设计、高并发系统设计、微服务技术栈。</subtitle>
+  <subtitle>专注、热爱、 全心贯注于你所期望的事物上,必有收获</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lbhuanggua.github.io/"/>
-  <updated>2017-05-22T07:24:35.040Z</updated>
+  <updated>2017-05-22T07:45:37.036Z</updated>
   <id>https://lbhuanggua.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>GoAccess应用与实践</title>
-    <link href="https://lbhuanggua.github.io/2017/05/20/goaccess/"/>
-    <id>https://lbhuanggua.github.io/2017/05/20/goaccess/</id>
-    <published>2017-05-20T09:08:15.000Z</published>
-    <updated>2017-05-22T07:24:35.040Z</updated>
+    <title>GoAccess 日志分析应用与实践</title>
+    <link href="https://lbhuanggua.github.io/2016/06/20/goaccess/"/>
+    <id>https://lbhuanggua.github.io/2016/06/20/goaccess/</id>
+    <published>2016-06-20T09:08:15.000Z</published>
+    <updated>2017-05-22T07:45:37.036Z</updated>
     
     <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h3 id="GoAccess-是什么？"><a href="#GoAccess-是什么？" class="headerlink" title="GoAccess 是什么？"></a>GoAccess 是什么？</h3><p><a href="https://goaccess.io/" target="_blank" rel="external">GoAccess</a>是一个开源的实时Web日志分析器和交互式查看器，可在* nix系统或浏览器的终端中运行。 它为需要可视化服务器报告的系统管理员提供快速有价值的HTTP统计信息。</p>
 <h3 id="为什么使用GoAccess"><a href="#为什么使用GoAccess" class="headerlink" title="为什么使用GoAccess"></a>为什么使用GoAccess</h3><p>GoAccess被设计为快速的基于终端的日志分析器。其核心思想是实时快速分析和查看Web服务器统计信息，而无需使用浏览器（如果您想通过SSH快速分析访问日志，或者如果您只喜欢在终端中工作）。 虽然终端输出是默认输出，但它具有生成完整的实时HTML报告（非常适合分析，监控和数据可视化）以及JSON和CSV报告的功能。</p>
@@ -63,6 +63,8 @@
 <p>UNIQUE VISITORS PER DAY - INCLUDING SPIDERS 每天独立访客数-包含爬虫<br>REQUESTED FILES (URLS) 请求文件（链接）<br>STATIC REQUESTS 静态请求链接<br>NOT FOUND URLS (404S)<br>VISITOR HOSTNAMES AND IPS 独立访客走势<br>OPERATING SYSTEMS 操作系统分析<br>BROWSERS 浏览器分析<br>TIME DISTRIBUTION 时间分布分析<br>REFERRERS URLS 热点链接分析<br>REFERRING SITES 反向链接分析<br>KEYPHRASES FROM GOOGLE’S SEARCH ENGINE 谷歌收集<br>HTTP STATUS CODES HTTP状态分析<br>GEO LOCATION 国家或地区分析</p>
 </blockquote>
 <h2 id="参数详解"><a href="#参数详解" class="headerlink" title="参数详解"></a>参数详解</h2><p>待续</p>
+<hr>
+<p>本作品采用<a rel="external" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可，转载请注明作者及原网址。<br>原网址：<a href="https://lbhuanggua.github.io/2016/06/20/goaccess/">https://lbhuanggua.github.io/2016/06/20/goaccess/</a></p>
 ]]></content>
     
     <summary type="html">
@@ -78,10 +80,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://lbhuanggua.github.io/2017/05/20/hello-world/"/>
-    <id>https://lbhuanggua.github.io/2017/05/20/hello-world/</id>
-    <published>2017-05-20T05:06:10.000Z</published>
-    <updated>2017-05-20T09:08:30.665Z</updated>
+    <link href="https://lbhuanggua.github.io/2016/05/20/hello-world/"/>
+    <id>https://lbhuanggua.github.io/2016/05/20/hello-world/</id>
+    <published>2016-05-20T05:06:10.000Z</published>
+    <updated>2017-05-22T07:45:51.255Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
@@ -92,6 +94,8 @@
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<hr>
+<p>本作品采用<a rel="external" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可，转载请注明作者及原网址。<br>原网址：<a href="https://lbhuanggua.github.io/2016/05/20/hello-world/">https://lbhuanggua.github.io/2016/05/20/hello-world/</a></p>
 ]]></content>
     
     <summary type="html">
