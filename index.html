@@ -368,7 +368,7 @@
 <p>–no-csv-summary 禁用CSV输出上的摘要指标。</p>
 </blockquote>
 <h3 id="控制台实时监视"><a href="#控制台实时监视" class="headerlink" title="控制台实时监视"></a>控制台实时监视</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tail <span class="_">-f</span> /usr/<span class="built_in">local</span>/nginx/logs/access.log | goaccess --log-format=COMBINED -</div></pre></td></tr></table></figure>
-<h3 id="实时HTML输出"><a href="#实时HTML输出" class="headerlink" title="实时HTML输出"></a>实时HTML输出</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">goaccess --log-format=COMBINED <span class="_">-f</span> /usr/<span class="built_in">local</span>/nginx/logs/access.log -o /path/nginx-log-report.html --real-time-html --port=7890 --addr=127.0.0.1 --ws-url=lch.netpat.cn</div></pre></td></tr></table></figure>
+<h3 id="实时HTML输出"><a href="#实时HTML输出" class="headerlink" title="实时HTML输出"></a>实时HTML输出</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">goaccess --log-format=COMBINED <span class="_">-f</span> /usr/<span class="built_in">local</span>/nginx/logs/access.log -o /path/nginx-log-report.html --real-time-html --port=7890 --addr=127.0.0.1 --ws-url=report.xxx.com</div></pre></td></tr></table></figure>
 <blockquote>
 <p>real-time-html 生成实时HTML报告<br>port 监听端口，默认 7890，可以自己指定<br>addr WebSocket服务器地址<br>ws-url</p>
 </blockquote>
