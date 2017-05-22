@@ -102,7 +102,7 @@
 <meta property="og:image" content="https://lbhuanggua.github.io/img/goaccess_configuration.png">
 <meta property="og:image" content="https://lbhuanggua.github.io/img/goaccess_report.png">
 <meta property="og:image" content="https://lbhuanggua.github.io/img/goaccess_report_html.png">
-<meta property="og:updated_time" content="2017-05-22T04:46:14.012Z">
+<meta property="og:updated_time" content="2017-05-22T07:24:35.040Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GoAccess应用与实践">
 <meta name="twitter:description" content="简介GoAccess 是什么？GoAccess是一个开源的实时Web日志分析器和交互式查看器，可在* nix系统或浏览器的终端中运行。 它为需要可视化服务器报告的系统管理员提供快速有价值的HTTP统计信息。 为什么使用GoAccessGoAccess被设计为快速的基于终端的日志分析器。其核心思想是实时快速分析和查看Web服务器统计信息，而无需使用浏览器（如果您想通过SSH快速分析访问日志，或者如果">
@@ -372,7 +372,20 @@
 <blockquote>
 <p>real-time-html 生成实时HTML报告<br>port 监听端口，默认 7890，可以自己指定<br>addr WebSocket服务器地址<br>ws-url</p>
 </blockquote>
-<h2 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h2><h2 id="报告说明"><a href="#报告说明" class="headerlink" title="报告说明"></a>报告说明</h2>
+<h2 id="报告分析"><a href="#报告分析" class="headerlink" title="报告分析"></a>报告分析</h2><h3 id="总体分析"><a href="#总体分析" class="headerlink" title="总体分析"></a>总体分析</h3><p>OVERALL ANALYZED REQUESTS</p>
+<blockquote>
+<p>Total Requests 总请求数<br>Valid Requests 有效请求<br>Failed Requests 失败请求<br>Excl. IP Hits<br>Referrers 反向链接（常见的域名）<br>Unique 404<br>Init. Proc. Time<br>Unique Visitors 独立访客数<br>Unique Files<br>Static Files 静态文件数<br>Log Size 日志大小<br>Bandwidth 带宽</p>
+</blockquote>
+<h3 id="详细分析"><a href="#详细分析" class="headerlink" title="详细分析"></a>详细分析</h3><p>常用关键字说明</p>
+<blockquote>
+<p>Hits 点击数<br>   Visitors 访客数<br>   Bandwidth 带宽<br>   Method 请求方法<br>   Protocol 协议<br>   Data 链接、IP等数据</p>
+</blockquote>
+<p>走势图，Panel Option 下拉选择统计类型，标题可排序</p>
+<blockquote>
+<p>UNIQUE VISITORS PER DAY - INCLUDING SPIDERS 每天独立访客数-包含爬虫<br>REQUESTED FILES (URLS) 请求文件（链接）<br>STATIC REQUESTS 静态请求链接<br>NOT FOUND URLS (404S)<br>VISITOR HOSTNAMES AND IPS 独立访客走势<br>OPERATING SYSTEMS 操作系统分析<br>BROWSERS 浏览器分析<br>TIME DISTRIBUTION 时间分布分析<br>REFERRERS URLS 热点链接分析<br>REFERRING SITES 反向链接分析<br>KEYPHRASES FROM GOOGLE’S SEARCH ENGINE 谷歌收集<br>HTTP STATUS CODES HTTP状态分析<br>GEO LOCATION 国家或地区分析</p>
+</blockquote>
+<h2 id="参数详解"><a href="#参数详解" class="headerlink" title="参数详解"></a>参数详解</h2><p>待续</p>
+
       
     </div>
 
@@ -560,7 +573,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GoAccess-是什么？"><span class="nav-number">1.1.</span> <span class="nav-text">GoAccess 是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么使用GoAccess"><span class="nav-number">1.2.</span> <span class="nav-text">为什么使用GoAccess</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GoAccess-特征"><span class="nav-number">1.3.</span> <span class="nav-text">GoAccess 特征</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#centOS下安装，其他系统安装请前往官网查看，都差不多"><span class="nav-number">2.1.</span> <span class="nav-text">centOS下安装，其他系统安装请前往官网查看，都差不多</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">3.</span> <span class="nav-text">使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#控制台输出报告"><span class="nav-number">3.1.</span> <span class="nav-text">控制台输出报告</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成HTML报告"><span class="nav-number">3.2.</span> <span class="nav-text">生成HTML报告</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成JSON报告"><span class="nav-number">3.3.</span> <span class="nav-text">生成JSON报告</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成CSV报告"><span class="nav-number">3.4.</span> <span class="nav-text">生成CSV报告</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#控制台实时监视"><span class="nav-number">3.5.</span> <span class="nav-text">控制台实时监视</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实时HTML输出"><span class="nav-number">3.6.</span> <span class="nav-text">实时HTML输出</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参数说明"><span class="nav-number">4.</span> <span class="nav-text">参数说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#报告说明"><span class="nav-number">5.</span> <span class="nav-text">报告说明</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GoAccess-是什么？"><span class="nav-number">1.1.</span> <span class="nav-text">GoAccess 是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么使用GoAccess"><span class="nav-number">1.2.</span> <span class="nav-text">为什么使用GoAccess</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GoAccess-特征"><span class="nav-number">1.3.</span> <span class="nav-text">GoAccess 特征</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#centOS下安装，其他系统安装请前往官网查看，都差不多"><span class="nav-number">2.1.</span> <span class="nav-text">centOS下安装，其他系统安装请前往官网查看，都差不多</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">3.</span> <span class="nav-text">使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#控制台输出报告"><span class="nav-number">3.1.</span> <span class="nav-text">控制台输出报告</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成HTML报告"><span class="nav-number">3.2.</span> <span class="nav-text">生成HTML报告</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成JSON报告"><span class="nav-number">3.3.</span> <span class="nav-text">生成JSON报告</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成CSV报告"><span class="nav-number">3.4.</span> <span class="nav-text">生成CSV报告</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#控制台实时监视"><span class="nav-number">3.5.</span> <span class="nav-text">控制台实时监视</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实时HTML输出"><span class="nav-number">3.6.</span> <span class="nav-text">实时HTML输出</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#报告分析"><span class="nav-number">4.</span> <span class="nav-text">报告分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#总体分析"><span class="nav-number">4.1.</span> <span class="nav-text">总体分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#详细分析"><span class="nav-number">4.2.</span> <span class="nav-text">详细分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参数详解"><span class="nav-number">5.</span> <span class="nav-text">参数详解</span></a></li></ol></div>
             
 
           </div>
