@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lbhuanggua.github.io/"/>
-  <updated>2017-05-22T07:45:37.036Z</updated>
+  <updated>2017-05-23T10:11:24.438Z</updated>
   <id>https://lbhuanggua.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://lbhuanggua.github.io/2016/06/20/goaccess/"/>
     <id>https://lbhuanggua.github.io/2016/06/20/goaccess/</id>
     <published>2016-06-20T09:08:15.000Z</published>
-    <updated>2017-05-22T07:45:37.036Z</updated>
+    <updated>2017-05-23T10:11:24.438Z</updated>
     
     <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h3 id="GoAccess-是什么？"><a href="#GoAccess-是什么？" class="headerlink" title="GoAccess 是什么？"></a>GoAccess 是什么？</h3><p><a href="https://goaccess.io/" target="_blank" rel="external">GoAccess</a>是一个开源的实时Web日志分析器和交互式查看器，可在* nix系统或浏览器的终端中运行。 它为需要可视化服务器报告的系统管理员提供快速有价值的HTTP统计信息。</p>
 <h3 id="为什么使用GoAccess"><a href="#为什么使用GoAccess" class="headerlink" title="为什么使用GoAccess"></a>为什么使用GoAccess</h3><p>GoAccess被设计为快速的基于终端的日志分析器。其核心思想是实时快速分析和查看Web服务器统计信息，而无需使用浏览器（如果您想通过SSH快速分析访问日志，或者如果您只喜欢在终端中工作）。 虽然终端输出是默认输出，但它具有生成完整的实时HTML报告（非常适合分析，监控和数据可视化）以及JSON和CSV报告的功能。</p>
@@ -46,7 +46,7 @@
 <p>–no-csv-summary 禁用CSV输出上的摘要指标。</p>
 </blockquote>
 <h3 id="控制台实时监视"><a href="#控制台实时监视" class="headerlink" title="控制台实时监视"></a>控制台实时监视</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tail <span class="_">-f</span> /usr/<span class="built_in">local</span>/nginx/logs/access.log | goaccess --log-format=COMBINED -</div></pre></td></tr></table></figure>
-<h3 id="实时HTML输出"><a href="#实时HTML输出" class="headerlink" title="实时HTML输出"></a>实时HTML输出</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">goaccess --log-format=COMBINED <span class="_">-f</span> /usr/<span class="built_in">local</span>/nginx/logs/access.log -o /path/nginx-log-report.html --real-time-html --port=7890 --addr=127.0.0.1 --ws-url=report.xxx.com</div></pre></td></tr></table></figure>
+<h3 id="实时HTML输出"><a href="#实时HTML输出" class="headerlink" title="实时HTML输出"></a>实时HTML输出</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">goaccess --log-format=COMBINED -f /usr/local/nginx/logs/access.log -o /path/nginx-log-report.html --real-time-html --port=7890 --addr=127.0.0.1 --ws-url=report.xxx.com</div></pre></td></tr></table></figure>
 <blockquote>
 <p>real-time-html 生成实时HTML报告<br>port 监听端口，默认 7890，可以自己指定<br>addr WebSocket服务器地址<br>ws-url</p>
 </blockquote>
